@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header {
+    background-color: #eac926;
+    padding: 20px;
+}
+
+.Logo{
+    width: 200px;
+}
+
+body {
+    background-color: beige;
+}
+h1 {
+    color:blueviolet;
+}
+
+.titulares {font-size: 24px;}
+
+.precio {font-size: 18px;}
+
+.descuento {font-size: 16px;}
+
+.descripción {font-size: 16px;}
+
+.hamburger-button {text-align: center;}
+
+.caja-search-bar{
+    background-color: white;
+    background-size: auto;
+    padding: 1%;
+    font-size: 10px;
+    opacity: 0.5;
+    font-style: normal;
+}
+.icono-lupa{
+    background-color: white;
+    width: 20px;
+    border-radius: 2px;
+    align-items: center;
+}
