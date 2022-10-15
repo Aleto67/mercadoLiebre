@@ -1,0 +1,3 @@
+# mercadoLiebre
+No creo que este repositorio le sirva a nadie. Se trata de un trabajo práctico del curso de Fullstack que estoy haciendo en Digital House
+Y no me está yendo muy bien que digamos...
