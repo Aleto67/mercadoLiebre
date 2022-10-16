@@ -3,16 +3,17 @@
     margin: 0px;
     padding: 0px;
 }
-
-/*HEADER*/
 body{
     font-family: 'Roboto', 'sans-serif';
+    background-color: #ebebeb;
 }
+
+/*HEADER*/
 
 header{
     background-color: #EAC926;
     padding: 10px;
-    width: 90vw;
+    width: 90vw;  /*este width lo pide el enunciado Diseño adaptativo Paso I*/
     margin: auto;
 }
 
@@ -75,29 +76,11 @@ header{
     margin: auto;
 }
 
-/*
-main section article i{
-        display: block;
-        font-size: 16px;
-        padding: 5px;
-        width: 30px;
-        height: 30px;
-        border: 1px solid #39b54a;
-        background-color: #FFF;
-        border-radius: 50%;
-        position: absolute;
-        right: 20px;
-        top: -15px;
-}
-*/
-
 /*MAIN*/
 
 main{
     width: 90vw;
     margin: auto;
-    padding: 1%;
-    background-color: #ebebeb;
 }
 
 article{
@@ -106,19 +89,44 @@ article{
 }
 
 .main-article{
-    width: 90vw;
+    background: white;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    margin: 0 px;
+    padding: 0 px;
+    box-sizing: border-box;
+    text-align: left;
 }
 
 .contenedor-padre-ipdd {
-    border-top: solid 1 px black;
-    padding: 15px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 1px solid #ebebeb;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .products{
     max-width: 100%;
 }
 .product_img{
-    max-width: 99%;
+    max-width:100%;
 }
 /*
 .main-article{
@@ -132,25 +140,26 @@ h3{
 }
 
 .description{
-    font-size: 16px;
-    margin-bottom: 20px;
-    display: none;
-}
-
-.iconoCamion{
+    font-size: 1em;
+    margin: 0;
+    padding: 15px;
     position: relative;
-}
-
-.contenedor-padre-precio-descuento{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: center;
 }
 .discount {
     font-size: 16px;
-    width: 70%;
+    color: #39b54a;
+    flex-grow: 0.7;
+    margin: auto;
 }
-.price{
+.price {
     font-size: 18px;
-    width: 30%;
+    flex-grow: 0.3;
 }
 
 /*FOOTER*/
@@ -178,6 +187,9 @@ h3{
     margin-bottom: 10px;
     margin-top: 20px;
 }
+
+/* MEDIA QUERY*/
+
 @media (min-width:361px) {
 
     .navegador-header{
@@ -196,9 +208,7 @@ h3{
         max-width: 45%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .product_img{
-        max-width: 44%;
-    }
+    
     .description{
         display: block;
     }
@@ -215,8 +225,4 @@ h3{
     article{
         max-width: 20%;
     }
-    .product_img{
-        max-width: 19%;
-    }
-
 }
