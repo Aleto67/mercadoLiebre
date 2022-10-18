@@ -13,14 +13,16 @@ body{
 header{
     background-color: #EAC926;
     padding: 10px;
-    width: 90vw;  /*este width lo pide el enunciado Diseño adaptativo Paso I*/
-    margin: auto;
+    width: 100vw;  /*este width lo pide el enunciado Diseño adaptativo Paso I*/
+    position: fixed;
+    z-index: 10;
 }
 
 .top-header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    
 }
 
 .logo {
@@ -36,6 +38,9 @@ header{
 .compraEnCuotas{
     text-align: center;
     margin: auto;
+    font-size: 15px;
+    padding-bottom: 10px;
+    font-size: 12px;
 }
 
 .navegador-header{
@@ -72,26 +77,75 @@ header{
 }
 
 .banner{
-    max-width: 90vw;
+    max-width: 100vw;
     margin: auto;
+    padding-top: 130px;
 }
 
 /*MAIN*/
 
 main{
-    width: 90vw;
-    margin: auto;
+    width: 100vw;
+   
 }
-
-article{
-    margin: 10px;
-    width: 90vw;
+.products{
+    width: 100%;
 }
 
 .main-article{
+    margin: 10px;
+    width: 95vw;
     background: white;
 }
 
+.product_img{
+    width: 100%;
+    padding: 5px;
+}
+
+.contenedor-padre-ipdd{
+    border-top: #ebebeb 2px solid;
+}
+
+main section article i{
+    position: relative;
+    left: 80%;
+
+    color: green;
+    font-size: 20px;
+    border: green solid 1px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    margin-top: 2px;
+    margin-left: 2px;
+
+}
+
+.contenedor-padre-precio-descuento{
+    display: flex;
+    padding: 5%;
+}
+
+.price{
+    display: inline;
+    width: 30%;
+    padding-left: 3%;
+}
+.discount{
+    display: inline;
+    width: 70%;
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    padding: 3%;
+    display: none;
+}
+
+/*
 main section article i{
     display: block;
     font-size: 16px;
@@ -102,15 +156,15 @@ main section article i{
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
+    position: relative;
+    right: -260px;
+    top: 15px;
     margin: 0 px;
     padding: 0 px;
     box-sizing: border-box;
     text-align: left;
-}
-
+}*/
+/*
 .contenedor-padre-ipdd {
     position: relative;
     display: flex;
@@ -121,22 +175,24 @@ main section article i{
     padding-left: 15px;
     padding-right: 15px;
 }
-
+*/
+/*
 .products{
     max-width: 100%;
 }
 .product_img{
     max-width:100%;
 }
-/*
+
 .main-article{
     border: solid 1px #ebebeb;
 }
 */
-
+/*
 
 h3{
     font-size: 24px;
+    margin-left: 5px;
 }
 
 .description{
@@ -144,24 +200,36 @@ h3{
     margin: 0;
     padding: 15px;
     position: relative;
-    left: 0;
-    bottom: 0;
+    left: 0px;
+    bottom: 0px;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+    display: none;
 }
+
+.contenedor-padre-precio-descuento{
+    display: flex;
+}
+/*
 .discount {
     font-size: 16px;
     color: #39b54a;
-    flex-grow: 0.7;
+   /* flex-grow: 0.7; *//*
     margin: auto;
+    width: 70%;
+    margin-left: 80px;
 }
+*/
+/*
 .price {
     font-size: 18px;
-    flex-grow: 0.3;
+ /* flex-grow: 0.3; *//*
+    width: 30%;
+    padding: 10px;
 }
-
+*/
 /*FOOTER*/
 
 .itemPiePagina{
@@ -194,18 +262,25 @@ h3{
 
     .navegador-header{
         display: flex;
+        font-size: 10px;
     }
     .nav-arriba{
-        max-width: 20%;
+        max-width: 50%;
     }
     .nav-abajo{
-        max-width: 30%;
+        max-width: 50%;
     }
+
+    /*
     .products{
         display: flex
     }
-    article{
-        max-width: 45%;
+    
+    .discount{
+        margin-left: 0px;
+    }*/
+    .main-article{
+        width: 45%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     
@@ -215,14 +290,24 @@ h3{
     .burger-menu{
         display: none;
     }
-    
+    .formularioBusqueda{
+        padding-left: 60px;
+             
+    }
 }
 
 @media (min-width:769px){
-    .products{
-        display: flex;
+    
+    .main-article{
+        width: 25%;
     }
-    article{
-        max-width: 20%;
+
+    .formularioBusqueda{
+        padding-left: 100px;
+             
     }
+    .navegador-header{
+        font-size: 14px;
+    }
+
 }
