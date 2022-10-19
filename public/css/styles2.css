@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #ebebeb;
+    display: box;
+}
+
+.leyenda, .perfil{
+    margin: 3%;
+}
+
+.nombre, .usuario, .direccion{
+    text-align: center;
+    margin: 5%;
+    font-size: 16px;
+    padding-left: 15%;
+    padding-right: 15%; 
+}
+.usuario{
+    text-align: center;
+    margin: 5%;
+    font-size: 16px;
+    padding-left: 1%;
+    padding-right: 1%; 
+}
+.direccion{
+    text-align: center;
+    margin: 5%;
+    font-size: 16px;
+    padding-left:15%;
+    padding-right: 15%; 
+}
+
+.etiquetaFecha, .etiquetaPerfil, .etiquetaCategorias, .etiquetaFoto{
+    text-align: left;
+    margin-left: 5%;
+}
+.fecha{
+    text-align: center;
+    margin-left: 5%;
+    padding: 1%;
+    font-size: 12px;
+}
+
+.categoria{
+    margin-left: 30%;
+    padding-top: 2%;
+}
+
+.foto{
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 10%;
+}
+
+.clave{
+    margin-left: 5%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.botonReset{
+    padding: 2%;
+    background-color: red;
+    color: white;
+    position: relative;
+    left: 35%;
+    top: 3%;
+    margin: 2%;
+}
+
+.botonGuardar{
+    padding: 2%;
+    background-color: green;
+    color: black;
+    position: relative;
+    left: 37%;
+    top: 3%;
+}

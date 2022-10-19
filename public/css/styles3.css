@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #ebebeb;
+}
+
+.usuario, .clave{
+    text-align: center;
+    margin-left: 35%;
+    margin-bottom: 2%;
+}
+
+.botonGuardar{
+    background-color: green;
+    color: white;
+    padding: 1%;
+    margin-left: 40%;
+}
+
+.leyenda{
+    text-align: center;
+    padding: 5%;
+}

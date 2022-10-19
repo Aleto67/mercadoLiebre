@@ -260,6 +260,10 @@ h3{
 
 @media (min-width:361px) {
 
+    .products{
+        display: flex;
+    }
+
     .navegador-header{
         display: flex;
         font-size: 10px;
@@ -280,7 +284,7 @@ h3{
         margin-left: 0px;
     }*/
     .main-article{
-        width: 45%;
+        min-width: 45%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     
@@ -299,7 +303,7 @@ h3{
 @media (min-width:769px){
     
     .main-article{
-        width: 25%;
+        min-width: 23%;
     }
 
     .formularioBusqueda{

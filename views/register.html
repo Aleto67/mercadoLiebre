@@ -7,63 +7,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
     <script src="https://kit.fontawesome.com/26ed95fe57.js" crossorigin="anonymous"></script> 
 </head>
 <body>
+    <div class="logo"> 
+        <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+    </div>
+    <h3 class="leyenda"> Por favor ingrese los siguientes datos: </h3>
+
     <form class="formularioRegistro"   action="/registro" method="post">
 
-        <label for="name"> Nombre y Apellido </label>
-        <input type="text"  name="name"   id="name">
+        
+        <input class="nombre"    type="text"  name="name"   id="name" placeholder="Nombre y Apellido">
+        <br>
+        <input class="usuario "type="text"  name="usu"   id="usu" placeholder="Nombre de usuario">
         <br>
 
-        <label for="usu"> Nombre de usuario </label>
-        <input type="text"  name="usu"   id="usu">
+        <label class="etiquetaFecha" for="birthDate"> Fecha de nacimiento </label> 
+        <br>
+        <input class="fecha" type="date"  name="birthDate"   id="birthDate">
+        <br>
+        <input class="direccion" type="text"  name="address"   id="address" placeholder="Domicilio">
         <br>
 
-        <label for="birthDate"> Fecha de nacimiento </label>
-        <input type="date"  name="birthDate"   id="birthDate">
-        <br>
-
-        <label for="address"> Domicilio </label>
-        <input type="text"  name="address"   id="address">
-        <br>
-
-        <label for="perfil"> Sos comprador o vendedor </label>
-        <select name="perfil">
+        <label class="etiquetaPerfil" for="perfil"> Elegí tu perfil, sos: </label>
+        <select class="perfil" name="perfil">
             <option value="buyer"> Comprador </option>
             <option value="saller"> Vendedor </option>
         </select>
         <br>
 
-        <label for="categories"> Seleccione las categorías de su interés </label>
+        <label class="etiquetaCategorias" for="categories"> Seleccioná las categorías de tu interés: </label>
         <br>
-        <label for="categories"> Electro</label>
+        <label class="categoria"   for="categories"> Electro</label>
         <input type="checkbox"  name="categories"   value="Electro"> <br>
-        <label for="categories"> Moda </label>
+        <label class="categoria"f or="categories"> Moda </label>
         <input type="checkbox"  name="categories"   value="Moda"> <br>
-        <label for="categories"> Hogar </label>
+        <label class="categoria" for="categories"> Hogar </label>
         <input type="checkbox"  name="categories"   value="Hogar"> <br>
-        <label for="categories"> Juguetería</label>
+        <label class="categoria" for="categories"> Juguetería</label>
         <input type="checkbox"  name="categories"   value="Juguetería"> <br>
-        <label for="categories"> Vida sana</label>
+        <label class="categoria" for="categories"> Vida sana</label>
         <input type="checkbox"  name="categories"   value="Vida sana"> <br>
         <br>
 
-        <label for="photo"> Foto del usuario </label>
-        <input type="file" name="photo" accept=".jpg">
+        <label class="etiquetaFoto" for="photo"> Foto del usuario </label>
+        <input class="foto" type="file" name="photo" accept=".jpg">
+        <br>
+        <input class="clave" type="password" name= "password" id="password" placeholder="Ingrese contraseña">
+        <br>
+        <input class="clave" type="password" name= "password2" id="password2" placeholder="Reigrese contraseña">
         <br>
 
-        <label for="password"> Ingrese su contraseña </label>
-        <input type="password" name= "password" id="password">
+        <button class="botonReset" type="reset"> Resetear </button>
         <br>
-        <label for="password2"> Reingrese su contraseña </label>
-        <input type="password" name= "password2" id="password2">
-        <br>
-
-        <button type="reset"> Reseteo </button>
-        <br>
-        <button type="submit"> Guardar </button>
+        <button class="botonGuardar" type="submit"> Guardar </button>
         <br>
 
 
