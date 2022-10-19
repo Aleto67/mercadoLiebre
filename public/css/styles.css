@@ -98,6 +98,11 @@ main{
     background: white;
 }
 
+.main-article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}
+
 .product_img{
     width: 100%;
     padding: 5px;
@@ -123,6 +128,13 @@ main section article i{
 
 }
 
+main section article i:hover{
+   
+   transform: rotate(-90deg);
+   transition: all 500ms;
+}
+
+
 .contenedor-padre-precio-descuento{
     display: flex;
     padding: 5%;
@@ -142,7 +154,10 @@ main section article i{
 .description{
     text-align: center;
     padding: 3%;
-    display: none;
+    color: white;
+}
+.description:hover{
+    color: black;
 }
 
 /*
@@ -234,7 +249,8 @@ h3{
 
 .itemPiePagina{
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 800;  ;
 }
 
 .iconoPiePagina{
@@ -243,6 +259,10 @@ h3{
     margin-top: 10px;
     font-size: 2em;
     color: #03264C;
+}
+
+.iconoPiePagina:hover{
+    color:#EAC926;
 }
 
 .parrafoItemPiePagina {
@@ -254,6 +274,11 @@ h3{
     text-align: center;  
     margin-bottom: 10px;
     margin-top: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
 }
 
 /* MEDIA QUERY*/
@@ -285,11 +310,12 @@ h3{
     }*/
     .main-article{
         min-width: 45%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
     }
+   
     
     .description{
-        display: block;
+        display:block;
     }
     .burger-menu{
         display: none;
@@ -312,6 +338,11 @@ h3{
     }
     .navegador-header{
         font-size: 14px;
+    }
+   
+    footer{
+        display: flex;
+        flex-direction: row;
     }
 
 }

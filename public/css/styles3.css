@@ -20,6 +20,10 @@ body{
     margin-left: 40%;
 }
 
+.botonGuardar:hover{
+    background-color: #0022AA;
+}
+
 .leyenda{
     text-align: center;
     padding: 5%;
